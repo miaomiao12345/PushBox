@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-04-07 21:06:54
+ * @version $Id$
+ */
+
+@media only screen and (min-width:600px){
+
+	#pushbox{
+		height: 590px;
+		width: 450px;
+		margin:auto;
+	}
+	.level{
+		margin:20px 10px;
+	}
+}
+@media only screen and (max-width:600px){
+
+	#pushbox{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border: 0;
+		margin:0;
+
+	}
+	#pushbox img{
+		height: 100%;
+	}
+	.level{
+		margin-top: 20px;
+		margin-left: 18px;
+	}
+}
+
+#pushbox{
+	//height: 590px;
+	//width: 450px;
+	//margin:auto;
+	background-color: rgba(0,0,100,0.1);
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(roy.jpg);
+}
+
+.font1{
+	font-size: 60px;
+	color: blue;
+	font-weight:2;
+	font-family: "华文琥珀"; 
+}
+.startinput{
+	font-size: 25px;
+	font-family: "华文行楷";
+	border: 0;
+	background-color: rgba(0,200,0,0.8);
+}
+.level{
+	height: 30px;
+	width: 30px;
+	border: 1px black solid;
+	border-radius: 10px;
+	//margin: 20px 10px;
+	text-align: center;
+	font-size: 25px;
+}
+.level img{
+	height: 25px;
+	width: 25px;
+}
+table{
+	border-collapse: collapse;
+	margin: auto;
+	align: center;
+	flex-shrink: 1.0;
+}
+
+td{
+	border:1px black solid;
+	height: 50px;
+	width: 50px;
+}
+img{
+	//height: 50px;
+	//width: 50px;
+	width: 100%;
+}
+
+.control{
+	width: 300px;
+	height: 30px;
+	border: 1px solid;
+	text-align: center;
+}
+.control td{
+	height: 20px;
+}
+
+.win{
+	margin:10px auto;
+	background-color: rgba(0,0,200,0.3);
+	font-family: "华文行楷";
+	border: 0px;
+	font-size: 20px;
+}
+.font2{
+	font-size: 50px;
+	color: rgba(300,0,0,0.5);
+	font-weight:2;
+	font-family: "华文琥珀"; 
+}
+
