@@ -158,7 +158,7 @@ function level(n) {
 //通关界面
 function win() {
 	div.innerHTML = "<div><span class='font2'>你好棒!</span><br/><br/><br/></div>"+
-					"<div ><input class='win' type='button' value='重玩' onclick='level(1)'/></div>"+
+					"<div ><input class='win' type='button' value='重玩' onclick='level(l)'/></div>"+
 					"<div ><input class='win' type='button' value='选关' onclick='start()'/></div>"+
 					"<div><input class='win' type='button' value='下一关' onclick='level(l+1)'/></div>";
 	div.style.justifyContent ="center";
