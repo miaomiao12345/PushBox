@@ -178,7 +178,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x-2*b].innerHTML = td[x-b].innerHTML;
 				td[x-b].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x -= b;
 				flag--;	
 				}else if(arr[x-2*b] == "des" ){
@@ -187,7 +187,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x-2*b].innerHTML = td[x-b].innerHTML;
 				td[x-b].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x -= b; 
 				}
 			}else if(arr[x-b] == "box"){
@@ -197,7 +197,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-2*b].innerHTML = td[x-b].innerHTML;
 					td[x-b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x -= b;
 				}else if(arr[x-2*b] == "des"){
 					arr[x-2*b] = "box+des";
@@ -205,7 +205,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-2*b].innerHTML = td[x-b].innerHTML;
 					td[x-b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x -= b;
 					flag++;
 					if(flag == m){
@@ -217,12 +217,12 @@ function move(n) {
 					arr[x-b] = "person";
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x -= b;
 				}else if(arr[x-b] == "des"){
 					arr[x] = (arr[x] == "des")?"des" : "";
 					td[x-b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x -= b;
 				}
 			break;
@@ -234,7 +234,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x+2].innerHTML = td[x+1].innerHTML;
 				td[x+1].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x ++;
 				flag--;	
 				}else if(arr[x+2] == "des" ){
@@ -243,7 +243,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x+2].innerHTML = td[x+1].innerHTML;
 				td[x+1].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x ++; 
 				}
 			}else if(arr[x+1] == "box"){
@@ -253,7 +253,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+2].innerHTML = td[x+1].innerHTML;
 					td[x+1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x++;
 				}else if(arr[x+2] == "des"){
 					arr[x+2] = "box+des";
@@ -261,7 +261,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+2].innerHTML = td[x+1].innerHTML;
 					td[x+1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x++;
 					flag++;
 					if(flag == m){
@@ -274,12 +274,12 @@ function move(n) {
 					arr[x+1] = "person";
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x++;
 				}else if(arr[x+1] == "des"){
 					arr[x] = (arr[x] == "des")?"des" : "";
 					td[x+1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x++;
 				}
 			break;
@@ -291,7 +291,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x+2*b].innerHTML = td[x+b].innerHTML;
 				td[x+b].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x += b;
 				flag--;	
 				}else if(arr[x+2*b] == "des" ){
@@ -300,7 +300,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x+2*b].innerHTML = td[x+b].innerHTML;
 				td[x+b].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x += b; 
 				}
 			}else if(arr[x+b] == "box"){
@@ -310,7 +310,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+2*b].innerHTML = td[x+b].innerHTML;
 					td[x+b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x += b;
 				}else if(arr[x+2*b] == "des"){
 					arr[x+2*b] = "box+des";
@@ -318,7 +318,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+2*b].innerHTML = td[x+b].innerHTML;
 					td[x+b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x += b;
 					flag++
 					if(flag == m){
@@ -330,12 +330,12 @@ function move(n) {
 					arr[x+b] = "person";
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x+b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x += b;
 				}else if(arr[x+b] == "des"){
 					arr[x] = (arr[x] == "des")?"des" : "";
 					td[x+b].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x += b;
 				}
 			break;
@@ -347,7 +347,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x-2].innerHTML = td[x-1].innerHTML;
 				td[x-1].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x --;
 				flag--;	
 				}else if(arr[x-2] == "des" ){
@@ -356,7 +356,7 @@ function move(n) {
 				arr[x] = (arr[x] == "des")?"des":"";
 				td[x-2].innerHTML = td[x-1].innerHTML;
 				td[x-1].innerHTML = td[x].innerHTML;
-				td[x].innerHTML = null;
+				td[x].innerHTML = '';
 				x --; 
 				}
 			}else if(arr[x-1] == "box"){
@@ -366,7 +366,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-2].innerHTML = td[x-1].innerHTML;
 					td[x-1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x--;
 				}else if(arr[x-2] == "des"){
 					arr[x-2] = "box+dex";
@@ -374,7 +374,7 @@ function move(n) {
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-2].innerHTML = td[x-1].innerHTML;
 					td[x-1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x--;
 					flag++;
 					if(flag == m){
@@ -386,12 +386,12 @@ function move(n) {
 					arr[x-1] = "person";
 					arr[x] = (arr[x] == "des")?"des":"";
 					td[x-1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x--;
 				}else if(arr[x-1] == "des"){
 					arr[x] = (arr[x] == "des")?"des" : "";
 					td[x-1].innerHTML = td[x].innerHTML;
-					td[x].innerHTML = null;
+					td[x].innerHTML = '';
 					x--;
 				}
 			break;
