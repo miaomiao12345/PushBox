@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+项目预览地址：
+  https://miaomiao12345.github.io/PushBox/PushBox.html
 
-You can use the [editor on GitHub](https://github.com/miaomiao12345/PushBox/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+使用语言/框架：
+  javaScript，未使用框架
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/miaomiao12345/PushBox/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+基本思想：
+  用table绘制地图格子，用数组存储当前地图上各个格子的状态，每次进入新关卡时根据新关卡的地图数组渲染页面
+  
+实现功能：
+  1.正确判断成功与失败（包含多个箱子多个目的地的情况）
+  2.提供选关功能，每完成一个关卡解锁才能解锁下一个
+  3.方便创建新关卡，只要在js中传入新关卡地图对应的状态数组即可
+  4.响应式布局，可以在移动端展示
+  5.推箱子提供上下左右键，点击即向相应方向移动；同时支持键盘的上下左右键控制移动。
+ 
